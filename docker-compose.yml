@@ -1,0 +1,20 @@
+version: '3.8'
+services:
+  mqtt-broker:
+    image: eclipse-mosquitto:2.0
+    ports:
+      - "1883:1883"
+      - "8883:8883"
+      - "9001:9001"
+    volumes:
+      - ./config/mosquitto.conf:/mosquitto/config/mosquitto.conf:ro
+      - ./config/passwd:/mosquitto/config/passwd:ro
+      - ./config/aclfile:/mosquitto/config/aclfile:ro
+      - ./certs/ca.crt:/mosquitto/config/certs/ca.crt:ro
+      - ./certs/server.crt:/mosquitto/config/certs/server.crt:ro
+      - ./certs/server.key:/mosquitto/config/certs/server.key:ro
+      - mosquitto_data:/mosquitto/data
+    restart: unless-stopped
+
+volumes:
+  mosquitto_data:

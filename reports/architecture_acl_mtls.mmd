@@ -1,0 +1,6 @@
+graph TD
+    A[Client MQTT] -- Certificat Client --> B(Broker Mosquitto)
+    B -- Certificat Broker --> A
+    A -- Authentification (user/pass) --> B
+    B -- ACL (Topic-based) --> A
+    A -- Publication/Souscription --> B

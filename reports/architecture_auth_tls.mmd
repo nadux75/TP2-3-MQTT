@@ -1,0 +1,4 @@
+graph TD
+    A[Client MQTT] -- Authentification (user/pass) --> B(Broker Mosquitto)
+    B -- TLS (Port 8883) --> A
+    A -- Publication/Souscription --> B
