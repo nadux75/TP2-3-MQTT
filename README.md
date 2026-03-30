@@ -37,5 +37,3 @@ chmod +x test_mqtt_security.sh
 ./test_mqtt_security.sh
 ```
 
-## Auteur
-**Manus AI** pour le compte de l'utilisateur.
