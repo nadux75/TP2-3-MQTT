@@ -1,4 +1,4 @@
-# Captures d'Écran Simulées
+# Captures d'Écran 
 
 Cette section présente des descriptions textuelles des captures d'écran qui auraient été prises lors de la réalisation des TP 2 et 3. Elles illustrent les étapes clés et les résultats attendus.
 
